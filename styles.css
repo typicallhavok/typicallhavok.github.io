@@ -1,0 +1,164 @@
+body {
+    background-color: #00001a;
+    color: lightblue;
+    font-family: 'trench';
+    margin:0;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 18vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    padding:0;
+    animation: welcome 4s forwards;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav {
+    opacity:0;
+    margin: 4vh 0 0 0;
+    width:max-content;
+    font-family: 'navt';
+    color:lightblue;
+    font-size: 2.5vh;
+    transition: 0.25s;
+}
+.button-wrapper:hover, .button-wrapper:focus {  
+    box-shadow: inset 10em 0 0 0 lightblue;
+    .ntext{color:#00001a;font-weight: bold;};
+}
+
+
+.button-wrapper {
+    padding:2px 23px 2px 20px;
+    font-family: 'navt';
+    color:lightblue;
+    font-size: 2.5vh;
+    margin: 4vh 0 0 0;
+    border-top: 2px lightblue solid;
+    border-right: 2px lightblue solid;
+    border-bottom: 2px lightblue solid;
+    transition: 0.25s;
+}
+
+.abouz {
+    animation: slideIn .5s 3s forwards;
+}
+
+.proz {
+    animation: slideIn .5s 3.1s forwards;
+}
+
+.contact {
+    animation: slideIn .5s 3.2s forwards;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited { 
+    color: lightblue;
+    width:max-content
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 49.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    font-size:10vw;
+}
+
+.typ {
+    opacity: 0;
+    width:0;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        fadeIn .5s 3s forwards,
+        typing 2s 5s infinite,
+        cursor .4s step-end infinite alternate;
+}
+
+.aboutp {
+    font-size: 20vw;
+    text-align: center;
+    top:10vh;
+    left:50%;
+    margin:10vh;
+    font-family: 'dot1';
+    opacity:20%;
+}
+
+.namea {
+    position:absolute;
+    font-size: 5vw;
+    text-align: center;
+    top:10vh;
+    left:50%;
+    margin:10vh;
+    font-weight:bold;
+}
+
+
+
+@font-face {
+    font-family: 'trench';
+    src: url(font/TrenchThin.ttf);
+}
+
+@font-face {
+    font-family: 'navt';
+    src: url(font/Timeburner-xJB8.ttf);
+}
+
+@font-face {
+    font-family: 'dot1';
+    src: url(font/MUSICNET.ttf);
+}
+
+@font-face {
+    font-family: 'dot2';
+    src: url(font/Starlight.ttf);
+}
+
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 100;}
+}
+
+@keyframes cursor{
+    50% { border-color : transparent }
+}
+
+@keyframes welcome {
+    0%{width:0%;}
+    80%{width:100%}
+    100%{opacity:0}
+}
+
+@keyframes typing {
+    0%{width:3.5vw;}
+    50%{width:100%}
+    100%{width:3.5vw}
+}
+
+
+@keyframes slideIn {
+    from{transform: translateX(-1em);opacity:0}
+    to {transform: translateX(0); opacity: 100;}
+}
