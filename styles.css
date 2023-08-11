@@ -28,6 +28,7 @@ body {
     font-size: 2.5vh;
     transition: 0.25s;
 }
+
 .button-wrapper:hover, .button-wrapper:focus {  
     box-shadow: inset 10em 0 0 0 lightblue;
     .ntext{color:#00001a;font-weight: bold;};
@@ -44,6 +45,11 @@ body {
     border-right: 2px lightblue solid;
     border-bottom: 2px lightblue solid;
     transition: 0.25s;
+}
+
+.button-wrapper:active {  
+    transform: translateX(.3vw);
+    border-left: lightblue 2px solid;
 }
 
 .abouz {
