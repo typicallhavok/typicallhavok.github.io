@@ -1,9 +1,11 @@
 body {
     margin: 0;
-    background-color:lightblue;
+    background-color: #f0f4f8; /* Background color */
     height: 100vh;
     overflow: hidden;
+    font-family: 'meltixL';
 }
+
 
 .card {
     backdrop-filter: blur(10px);
@@ -13,7 +15,18 @@ body {
     0px 0px 7.2px rgba(0, 0, 0, 0.073), 0px 0px 13.6px rgba(0, 0, 0, 0.09),
     0px 0px 24.3px rgba(0, 0, 0, 0.107), 0px 0px 45.5px rgba(0, 0, 0, 0.129),
     0px 0px 109px rgba(0, 0, 0, 0.18);
-    background-color: rgba(20, 0, 196, 0.466);
+    background-color: #ffffff; /* Card background color */
+}
+
+.heading {
+    margin: 1.4vh 1.7vw 0 1.7vw;
+    padding-bottom: 1.3vh;
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 3px solid #333333; /* Text color */
+    color: #333333; /* Text color */
+    font-family: 'meltixB';
 }
 
 .glare-container {
@@ -22,6 +35,32 @@ body {
     overflow: hidden;
     position: relative;
 }
+
+/* .heading {
+    margin: 1.4vh 1.7vw 0 1.7vw;
+    padding-bottom: 1.3vh;
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 3px solid lightblue;
+    color: lightblue;
+    font-family: 'meltixB';
+    position: relative;
+} */
+
+.heading::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #00ff00; /* Glow color - can be adjusted */
+    box-shadow: 0 0 8px #00ff00, 0 0 12px #00ff00, 0 0 16px #00ff00; /* Adjust box-shadow values */
+    opacity: 1;
+}
+
+
 
 .glare {
     position: absolute;
@@ -40,7 +79,6 @@ body {
     filter: blur(4px);
 }
 
-
 .wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -49,3 +87,30 @@ body {
     height:100vh;
     padding: 0 10vh 0 10vh;
 }
+
+@font-face {
+    font-family: 'trench';
+    src: url(font/TrenchThin.ttf);
+}
+
+@font-face {
+    font-family: 'meltixB';
+    src: url(font/Meltix_Bold_Demo.otf);
+}
+
+@font-face {
+    font-family: 'meltixL';
+    src: url(font/Meltix_Light_Demo.otf);
+}
+
+@keyframes glowing-border {
+    0% {
+      box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    }
+    50% {
+      box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    }
+    100% {
+      box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    }
+  }

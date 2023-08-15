@@ -9,25 +9,28 @@
     <body>
         <div class="wrapper">
             <div class="card card-0">
-                asdad
+                <p class="heading">Project 1</p>
                 <div class="glare-container">
                     <div class="glare"></div>
                 </div>
             </div>
 
             <div class="card card-1">
+                <p class="heading">Project 2</p>
                 <div class="glare-container">
                     <div class="glare"></div>
                 </div>
             </div>
 
             <div class="card card-2">
+                <p class="heading">Project 3</p>
                 <div class="glare-container">
                     <div class="glare"></div>
                 </div>
             </div>
 
             <div class="card card-3">
+                <p class="heading">Project 4</p>
                 <div class="glare-container">
                     <div class="glare"></div>
                 </div>
@@ -35,11 +38,10 @@
         </div>
         <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript">
-            VanillaTilt.init(document.querySelector("card"), {
-                max: 1000,
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 35,
                 speed: 500
             });
-            VanillaTilt.init(document.querySelectorAll(".card"));
         </script>
     </body>
 </html>
