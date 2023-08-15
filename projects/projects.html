@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Projects</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="card card-0">
+                asdad
+                <div class="glare-container">
+                    <div class="glare"></div>
+                </div>
+            </div>
+
+            <div class="card card-1">
+                <div class="glare-container">
+                    <div class="glare"></div>
+                </div>
+            </div>
+
+            <div class="card card-2">
+                <div class="glare-container">
+                    <div class="glare"></div>
+                </div>
+            </div>
+
+            <div class="card card-3">
+                <div class="glare-container">
+                    <div class="glare"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelector("card"), {
+                max: 1000,
+                speed: 500
+            });
+            VanillaTilt.init(document.querySelectorAll(".card"));
+        </script>
+    </body>
+</html>

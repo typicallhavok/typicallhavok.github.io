@@ -22,8 +22,8 @@ async function titlee(){
 async function home(){
     const typ = document.getElementById("typ");
     typ.textContent = typLi[index];
-    if(index==2)
-    index-=3;
+    if(index==typLi.length-1)
+    index=-1;
     index++;
 }
 
