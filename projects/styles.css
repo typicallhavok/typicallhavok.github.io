@@ -1,33 +1,24 @@
 body {
     margin: 0;
-    background-color: #f0f4f8; /* Background color */
+    background-color: #f5f5f5;
     height: 100vh;
     overflow: hidden;
     font-family: 'meltixL';
 }
 
 
+
 .card {
     backdrop-filter: blur(10px);
     min-width: 35vh;
     height: 35vh;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.051),
-    0px 0px 7.2px rgba(0, 0, 0, 0.073), 0px 0px 13.6px rgba(0, 0, 0, 0.09),
-    0px 0px 24.3px rgba(0, 0, 0, 0.107), 0px 0px 45.5px rgba(0, 0, 0, 0.129),
-    0px 0px 109px rgba(0, 0, 0, 0.18);
-    background-color: #ffffff; /* Card background color */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1),
+    0px 0px 10px rgba(0, 0, 0, 0.15), 0px 0px 20px rgba(0, 0, 0, 0.2),
+    0px 0px 30px rgba(0, 0, 0, 0.25), 0px 0px 50px rgba(0, 0, 0, 0.3),
+    0px 0px 120px rgba(0, 0, 0, 0.4); 
+    background-color: #ffffff; 
 }
 
-.heading {
-    margin: 1.4vh 1.7vw 0 1.7vw;
-    padding-bottom: 1.3vh;
-    font-size: 3vh;
-    font-weight: bold;
-    text-align: center;
-    border-bottom: 3px solid #333333; /* Text color */
-    color: #333333; /* Text color */
-    font-family: 'meltixB';
-}
 
 .glare-container {
     width: 100%;
@@ -36,30 +27,61 @@ body {
     position: relative;
 }
 
-/* .heading {
+.heading {
     margin: 1.4vh 1.7vw 0 1.7vw;
     padding-bottom: 1.3vh;
     font-size: 3vh;
     font-weight: bold;
     text-align: center;
-    border-bottom: 3px solid lightblue;
-    color: lightblue;
+    border-bottom: 3px solid #333333; 
+    color: #333333; 
     font-family: 'meltixB';
     position: relative;
-} */
+}
 
-.heading::after {
+.red::after {
     content: "";
     position: absolute;
     bottom: -3px;
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: #00ff00; /* Glow color - can be adjusted */
-    box-shadow: 0 0 8px #00ff00, 0 0 12px #00ff00, 0 0 16px #00ff00; /* Adjust box-shadow values */
-    opacity: 1;
+    background-color: #ff6b6b; 
+    box-shadow: 0 0 8px #ff6b6b, 0 0 12px #ff6b6b, 0 0 16px #ff6b6b;
 }
 
+.yellow::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f3ff4a;
+    box-shadow: 0 0 8px #f3ff4a, 0 0 12px #f3ff4a, 0 0 16px #f3ff4a;
+}
+
+.green::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #24ff42;
+    box-shadow: 0 0 8px #24ff42, 0 0 12px #24ff42, 0 0 16px #24ff42;
+}
+
+.blue::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #24a7ff;
+    box-shadow: 0 0 8px #24a7ff, 0 0 12px #24a7ff, 0 0 16px #24a7ff;
+}
 
 
 .glare {
@@ -103,14 +125,3 @@ body {
     src: url(font/Meltix_Light_Demo.otf);
 }
 
-@keyframes glowing-border {
-    0% {
-      box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
-    }
-    50% {
-      box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
-    }
-    100% {
-      box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
-    }
-  }
