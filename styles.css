@@ -105,12 +105,12 @@ a:visited {
 
 @font-face {
     font-family: 'trench';
-    src: url(font/TrenchThin.ttf);
+    src: url(assets/font/TrenchThin.ttf);
 }
 
 @font-face {
     font-family: 'navt';
-    src: url(font/Timeburner-xJB8.ttf);
+    src: url(assets/font/Timeburner-xJB8.ttf);
 }
 
 @keyframes fadeIn {

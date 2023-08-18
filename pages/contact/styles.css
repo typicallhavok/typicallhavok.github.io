@@ -1,0 +1,10 @@
+body{
+    background-color: lightblue;
+    color:#00001a;
+    font-family: 'trench';
+}
+
+@font-face {
+    font-family: 'trench';
+    src: url(../../assets/font/TrenchThin.ttf);
+}
