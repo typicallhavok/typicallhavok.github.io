@@ -112,16 +112,16 @@ body {
 
 @font-face {
     font-family: 'trench';
-    src: url(font/TrenchThin.ttf);
+    src: url(../font/TrenchThin.ttf);
 }
 
 @font-face {
     font-family: 'meltixB';
-    src: url(font/Meltix_Bold_Demo.otf);
+    src: url(../font/Meltix_Bold_Demo.otf);
 }
 
 @font-face {
     font-family: 'meltixL';
-    src: url(font/Meltix_Light_Demo.otf);
+    src: url(../font/Meltix_Light_Demo.otf);
 }
 
