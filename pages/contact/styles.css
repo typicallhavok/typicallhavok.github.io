@@ -4,6 +4,59 @@ body{
     font-family: 'trench';
 }
 
+.wam {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    margin:0 auto;
+    border-bottom: 2px solid white;
+    padding-bottom:2vh;
+}
+
+.message {
+    margin:5vh auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    background-color: rgba(0, 67, 94, 0.644);
+    border: 2px solid white;
+    border-radius: 50px;
+    padding:2vh;
+}
+
+input , textarea{
+    width:8em;
+    margin:10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+label {
+    padding:10px;
+    width: max-content;
+    justify-content: center;
+    margin:auto;
+    display: block;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color:black
+}
+
+.icon {
+    margin:0 10px 0 0;
+    position: relative;
+}
+
+.ilink, .glink {
+    font-size: 20px;
+    display: inline-flex; 
+    align-items: center;
+    vertical-align: center;
+}
+
 @font-face {
     font-family: 'trench';
     src: url(../../assets/font/TrenchThin.ttf);
