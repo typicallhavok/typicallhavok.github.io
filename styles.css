@@ -5,18 +5,29 @@ body {
     margin:0;
 }
 
+.scren {
+    border: 2px solid lightblue;
+    margin:0;
+}
+
 .welcome {
     text-align: center;
-    font-size: 18vw;
+    font-size: 10vh;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     margin:0;
     padding:0;
-    animation: welcome 4s forwards;
-    white-space: nowrap;
-    overflow: hidden;
+    top:25%;
+    left:30%
+}
+
+.svgw {
+    stroke:lightblue;
+    fill:transparent;
+    animation: 
+        fancyText 5s,
+        fillIn 1s 4s forwards;
+    stroke-width: .5;
+    z-index:5;
 }
 
 .nav {
@@ -122,10 +133,9 @@ a:visited {
     50% { border-color : transparent }
 }
 
-@keyframes welcome {
-    0%{width:0%;}
-    80%{width:100%}
-    100%{opacity:0}
+@keyframes fillIn {
+    from{fill:transparent;}
+    to{fill:lightblue;}
 }
 
 @keyframes typing {
@@ -134,8 +144,26 @@ a:visited {
     100%{width:3.5vw}
 }
 
-
 @keyframes slideIn {
     from{transform: translateX(-1em);opacity:0}
     to {transform: translateX(0); opacity: 100;}
+}
+
+@keyframes fancyText {
+    from{stroke-dasharray: 0 50%;}
+    to{stroke-dasharray: 50% 0;}
+}
+
+@media screen and (max-width: 870px) {
+    .welcome {
+        font-size: 8vw;
+        top:28vh;
+    }
+
+    .button-wrapper {
+        font-size: 1.8vw;
+    }
+    .typ {
+        font-size: 11vw;
+    }
 }
