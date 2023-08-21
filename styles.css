@@ -5,9 +5,26 @@ body {
     margin:0;
 }
 
-.scren {
-    border: 2px solid lightblue;
-    margin:0;
+.bor1 {
+    margin:0 0 0 13vw;
+    width:30vw;
+    height:30vh;
+    border: 20px solid transparent; 
+    border-image: linear-gradient(to bottom right, lightblue , transparent 50%);
+    border-image-slice: 1;
+    z-index: -1;
+    position: absolute;
+}
+
+.bor2 {
+    margin:20vh 0 0 53vw;
+    width:30vw;
+    height:30vh;
+    border: 20px solid transparent; 
+    border-image: linear-gradient(to top left, lightblue , transparent 50%);
+    border-image-slice: 1;
+    z-index: -1;
+    position: absolute;
 }
 
 .welcome {
@@ -16,11 +33,14 @@ body {
     position: absolute;
     margin:0;
     padding:0;
-    top:25%;
-    left:30%
+    top:36%;
+    left:30%;
 }
 
+
 .svgw {
+    width: 33vw;
+    height:10vh;
     stroke:lightblue;
     fill:transparent;
     animation: 
@@ -30,59 +50,35 @@ body {
     z-index:5;
 }
 
-.nav {
-    opacity:0;
-    margin: 4vh 0 0 0;
+
+nav {
     font-family: 'navt';
     color:lightblue;
     font-size: 2.5vh;
     transition: 0.25s;
     width:max-content;
-    transform: translateX(-1em)
+    top:5vh;
+    left:35vh;
+    display:inline-block;
+    position: relative;
 }
 
-.button-wrapper:hover, .button-wrapper:focus {  
-    box-shadow: inset 10em 0 0 0 lightblue;
-    .ntext{color:#00001a;font-weight: bold;};
+.ntext {
+    position: relative;
+    padding-top: 10px;
 }
 
-
-.button-wrapper {
-    padding:2px 23px 2px 20px;
-    font-family: 'navt';
-    color:lightblue;
-    font-size: 2.5vh;
-    margin: 4vh 0 0 0;
-    border-top: 2px lightblue solid;
-    border-right: 2px lightblue solid;
-    border-bottom: 2px lightblue solid;
-    transition: 0.25s;
-}
-
-.button-wrapper:active {  
-    transform: translateX(.3vw);
-    border-left: lightblue 2px solid;
-}
-
-.abouz {
-    animation: slideIn .5s 3s forwards;
-}
-
-.proz {
-    animation: slideIn .5s 3.1s forwards;
-}
-
-.contact {
-    animation: slideIn .5s 3.2s forwards;
+.button-wrapper:hover {
+    text-decoration: underline;
 }
 
 a {
     text-decoration: none;
+    color:lightblue;
 }
 
 a:visited { 
     color: lightblue;
-    width:max-content
 }
 
 .container {
@@ -90,17 +86,17 @@ a:visited {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 49.5%;
-    left: 50%;
+    top: 56%;
+    left: 48%;
     transform: translate(-50%, -50%);
     width: fit-content;
     height: fit-content;
     padding: 10px;
     border-radius: 10px;
-    font-size:10vw;
 }
 
 .typ {
+    font-size:8vw;
     opacity: 0;
     width:0;
     border-right: 2px solid;
@@ -139,14 +135,9 @@ a:visited {
 }
 
 @keyframes typing {
-    0%{width:3.5vw;}
+    0%{width:3vw;}
     50%{width:100%}
-    100%{width:3.5vw}
-}
-
-@keyframes slideIn {
-    from{transform: translateX(-1em);opacity:0}
-    to {transform: translateX(0); opacity: 100;}
+    100%{width:3vw}
 }
 
 @keyframes fancyText {
@@ -164,6 +155,10 @@ a:visited {
         font-size: 1.8vw;
     }
     .typ {
-        font-size: 11vw;
+        font-size: 8vw;
+    }
+    .container {
+        top:45%;
+        left:51%;
     }
 }
