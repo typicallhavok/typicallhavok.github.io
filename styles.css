@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #00001a;
     color: lightblue;
@@ -85,6 +89,9 @@ nav {
 
 .button-wrapper:active {
     font-size: 0.8vw;
+    .typ .welcome {
+        opacity: 0;
+    }
 }
 
 a {
