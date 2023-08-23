@@ -130,6 +130,22 @@ a:visited {
         cursor .4s step-end infinite alternate;
 }
 
+.about {
+    display: none;
+    position: fixed;
+    color:lightblue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 3.4vh;
+}
+
+.tj {
+    opacity: 1;
+}
 
 
 @font-face {
@@ -160,6 +176,11 @@ a:visited {
     0%{width:3vw;}
     50%{width:100%}
     100%{width:3vw}
+}
+
+@keyframes normType {
+    from{width: 0%;}
+    to{width: 60vw;}
 }
 
 @keyframes fancyText {
