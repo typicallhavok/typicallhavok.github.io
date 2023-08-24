@@ -4,6 +4,8 @@ const aboutLink = document.querySelector('.abouz a');
 const aboutDiv = document.querySelector('#about');
 const typm = document.querySelectorAll('.tj');
 const aText = aboutDiv.querySelectorAll('.info');
+const buttons = document.querySelectorAll('.button-wrapper');
+let homeLoad;
 
 async function home(){
     const typ = document.getElementById("typ");
@@ -25,10 +27,13 @@ function typeText(element, text) {
     animateTyping();
   }
 
-aboutLink.addEventListener('click', () => {
+aboutLink.addEventListener('click', (event) => {
+    event.preventDefault();
     if(aboutDiv.style.display == 'none' || aboutDiv.style.display == '') {
         charIndex =0;
         aboutDiv.style.display = 'block';
+        clearInterval(homeLoad);
+        console.log('timeoutpause')
         typm.forEach(element => {
             element.style.display = 'none';
         });
@@ -41,17 +46,18 @@ aboutLink.addEventListener('click', () => {
         typm.forEach(element => {
             element.style.display = 'flex';
         });
+        setTimeout(() => {
+            homeLoad = setInterval(home, 2000);
+        }, 1000);
     }
 });
 
-aboutDiv.addEventListener('click', (event) => {
-    if (event.target === aboutDiv) {
-        aboutDiv.style.display = 'none';
-    }
-});
 
-
-
-
-function delayedStart() {setInterval(home,2000)}
-document.addEventListener('DOMContentLoaded', function() {setTimeout(delayedStart,1000);});
+document.addEventListener('DOMContentLoaded', function() {setTimeout(() => {
+    homeLoad = setInterval(home, 2000);
+    }, 1000);
+    setTimeout(() => {
+        buttons.forEach(button => {
+            button.style.pointerEvents = 'auto';
+    });},1500)
+})
