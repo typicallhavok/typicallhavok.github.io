@@ -33,6 +33,7 @@ body {
 
 
 .welcome {
+    display: flex;
     text-align: center;
     font-size: 10vh;
     position: absolute;
@@ -176,12 +177,7 @@ a:visited {
 @keyframes typing {
     0%{width:3vw;}
     50%{width:100%}
-    100%{width:3vw}
-}
-
-@keyframes normType {
-    from{width: 0%;}
-    to{width: 60vw;}
+    100%{width:2.7vw}
 }
 
 @keyframes fancyText {

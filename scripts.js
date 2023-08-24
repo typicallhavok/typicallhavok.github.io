@@ -26,14 +26,22 @@ function typeText(element, text) {
   }
 
 aboutLink.addEventListener('click', () => {
-    aboutDiv.style.display = 'block';
-    typm.forEach(element => {
-        element.style.display = 'none';
-    });
-    charIndex =0;
-    aText.forEach(element => {
-        typeText(element,element.textContent);
-    });
+    if(aboutDiv.style.display == 'none' || aboutDiv.style.display == '') {
+        charIndex =0;
+        aboutDiv.style.display = 'block';
+        typm.forEach(element => {
+            element.style.display = 'none';
+        });
+        aText.forEach(element => {
+            typeText(element,element.textContent);
+        });
+    }
+    else {
+        aboutDiv.style.display='none' ;
+        typm.forEach(element => {
+            element.style.display = 'flex';
+        });
+    }
 });
 
 aboutDiv.addEventListener('click', (event) => {
