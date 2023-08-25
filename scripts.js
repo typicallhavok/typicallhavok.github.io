@@ -7,7 +7,7 @@ const buttons = document.querySelectorAll('.button-wrapper');
 const imgs = document.querySelectorAll('img');
 const projDiv = document.querySelector('#Project');
 let homeLoad;
-let currPage='home';
+let currPage='#Home';
 let tit = document.title.toUpperCase();
 let x=0;
 let i=0;
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
-            if(targetId=='#About'||targetId=='#Project') {
+            if(targetId=='#Home'||targetId=='#About'||targetId=='#Project') {
                 e.preventDefault();
                 closeAll();
             }

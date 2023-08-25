@@ -9,6 +9,16 @@ body {
     margin:0;
 }
 
+.hLogo {
+    pointer-events: auto;
+    display: flex;
+    font-family: 'navt';
+    top:7vh;
+    left:10vw;
+    position: fixed;
+    font-size: 2vw;
+}
+
 .bor1 {
     margin:10vh 0 0 8vw;
     width:30vw;
@@ -244,7 +254,7 @@ img:hover {
 @keyframes typing {
     0%{width:3vw;}
     50%{width:100%}
-    100%{width:2.7vw}
+    100%{width:2.5vw}
 }
 
 @keyframes fancyText {
@@ -261,5 +271,4 @@ img:hover {
     .button-wrapper {
         font-size: 1.8vw;
     }
-
 }
