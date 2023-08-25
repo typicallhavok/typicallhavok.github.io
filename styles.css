@@ -130,7 +130,7 @@ a:visited {
         cursor .4s step-end infinite alternate;
 }
 
-.about {
+#About {
     display: none;
     position: fixed;
     color:lightblue;
@@ -139,7 +139,6 @@ a:visited {
     transform: translate(-50%, -50%);
     z-index: 10;
     padding: 20px;
-    border-radius: 10px;
     font-size: 3.4vh;
     width: 60vw;
 }
@@ -148,6 +147,70 @@ a:visited {
     opacity: 1;
 }
 
+#Project {
+    display: none;
+    position: fixed;
+    color:lightblue;
+    top: 55%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 10px;
+    width: 60vw;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.proz {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 1vw 1vh 1vw;
+    margin:2vw;
+    border-radius:16px;
+    animation: slideIn 1s forwards;
+}
+
+.proz:nth-child(1) {
+    animation-delay: 0.25s;
+}
+
+.proz:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.proz:nth-child(3) {
+    animation-delay: .75s;
+}
+
+.proz:nth-child(4) {
+    animation-delay: 1s;
+}
+
+.pTitle {
+    margin:2vh;
+    padding:0 0 1.5vh 0;
+    border-bottom: 2px solid lightblue;
+}
+
+.cont {
+    margin:0 0 0 5vw ;
+}
+
+img {
+    margin: 1.7vh 1.4vw 0 0;
+    width: 3.5vw;
+    height: 3.5vw;
+    max-width: 30px;
+    max-height: 30px;
+    transition: transform 0.2s;
+    opacity:0.7;
+}
+
+img:hover {
+    transform: scale(1.2);
+    opacity:1;
+}
 
 @font-face {
     font-family: 'trench';
@@ -162,6 +225,11 @@ a:visited {
 @keyframes fadeIn {
     from{opacity: 0;display:none}
     to{opacity: 100;display:flex;}
+}
+
+@keyframes slideIn {
+    from{opacity: 0;transform: translateX(-5vw);}
+    to{opacity: 100;transform: translateX(0);}
 }
 
 @keyframes cursor{
@@ -188,17 +256,10 @@ a:visited {
 @media screen and (max-width: 870px) {
     .welcome {
         font-size: 8vw;
-        top:28vh;
     }
 
     .button-wrapper {
         font-size: 1.8vw;
     }
-    .typ {
-        font-size: 8vw;
-    }
-    .container {
-        top:45%;
-        left:51%;
-    }
+
 }
