@@ -30,7 +30,7 @@ function openHome() {
         element.style.display = 'flex';
     });
     setTimeout(() => {
-        homeLoad = setInterval(home,2000);
+        homeLoad = setInterval(home,0);
     }, 1000);
 }
 
