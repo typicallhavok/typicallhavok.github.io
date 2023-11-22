@@ -30,7 +30,7 @@ function openHome() {
         element.style.display = 'flex';
     });
     setTimeout(() => {
-        homeLoad = setInterval(home,0);
+        homeLoad = setInterval(home);
     }, 1000);
 }
 
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
  
 document.addEventListener('DOMContentLoaded', function() {setTimeout(() => {
-    homeLoad = setInterval(home,0);
+    homeLoad = setInterval(home);
     }, 1000);
     setTimeout(() => {
         imgs.forEach(img => {
