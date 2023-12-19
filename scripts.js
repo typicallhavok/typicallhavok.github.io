@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
  
 document.addEventListener('DOMContentLoaded', function() {setTimeout(() => {
-    homeLoad = setInterval(home,0);
+    homeLoad = setInterval(home,2000);
     }, 1000);
     setTimeout(() => {
         imgs.forEach(img => {
