@@ -179,15 +179,12 @@ a:visited {
     border-radius:16px;
     animation: slideIn 1s forwards;
     border: lightblue 2px solid;
+    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 }
 
-.projeach:hover {
+.proz:hover {
     opacity: 1;
     background-color: rgb(255,255,255,0.2);
-}
-
-.projeach {
-    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 }
 
 .proz:nth-child(1) {
