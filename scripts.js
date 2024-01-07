@@ -5,7 +5,7 @@ const typm = document.querySelectorAll('.tj');
 const aText = aboutDiv.querySelectorAll('.info');
 const buttons = document.querySelectorAll('.button-wrapper');
 const imgs = document.querySelectorAll('img');
-const projDiv = document.querySelector('#Project');
+const projDiv = document.querySelector('#Projects');
 let homeLoad;
 let currPage='#Home';
 let tit = document.title.toUpperCase();
@@ -61,12 +61,16 @@ function titlee(){
     x=0;
     if(x==0){
         i++;
-        document.title=tit.substring(0,i)
+        document.title=tit.substring(0,i);
     }
     else {
         i--;
-        document.title=tit.substring(0,i)
+        document.title=tit.substring(0,i);
     }
+}
+
+function project() {
+    window.open('https://github.com/typicallhavok/Pessato');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -74,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
-            if(targetId=='#Home'||targetId=='#About'||targetId=='#Project') {
+            if(targetId=='#Home'||targetId=='#About'||targetId=='#Projects') {
                 e.preventDefault();
                 closeAll();
             }
