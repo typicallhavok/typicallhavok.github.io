@@ -1,0 +1,23 @@
+#root {
+    font-family: trench;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'navt';
+    src: url(assets/font/Meltix_Bold_Demo.otf);
+}
+
+@font-face {
+    font-family: 'trench';
+    src: url(assets/font/TrenchThin.ttf);
+}
+
+@font-face {
+    font-family: 'hybi11';
+    src: url(assets/font/Hybi11AmigoExtraBold.ttf);
+}
