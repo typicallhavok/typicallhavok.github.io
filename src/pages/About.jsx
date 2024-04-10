@@ -69,7 +69,7 @@ const About = () => {
                 <span className="sDark">- Game Dev</span>
                 <span>- Cyber Sec</span>
             </div>
-            <a href="/assets/files/resume.pdf" target="_blank">
+            <a href="/my-portfolio/resume.pdf" target="_blank">
             <div className="resume">
                 resume        <img src={backImg} alt="" className="resumeIMG" />
             </div></a>
