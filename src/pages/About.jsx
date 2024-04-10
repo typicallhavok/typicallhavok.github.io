@@ -1,3 +1,4 @@
+import React from 'react';
 
 import { useEffect, useState } from "react";
 import backImg from "../assets/img/back.svg";

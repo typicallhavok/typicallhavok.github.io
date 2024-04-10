@@ -1,34 +1,53 @@
-import { useState } from 'react';
-import gitImg from './assets/img/git.png';
-import instaImg from './assets/img/ig.png';
-import mailImg from './assets/img/mail.png';
-import Home from './pages/Home.jsx';
-import About from './pages/About.jsx';
-import Project from './pages/Project.jsx';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import RedirectPdf from "./pages/RedirectPdf.jsx";
+import { useState } from "react";
+import gitImg from "./assets/img/git.png";
+import instaImg from "./assets/img/ig.png";
+import mailImg from "./assets/img/mail.png";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Project from "./pages/Project.jsx";
 
-
-
-import './App.css';
+import "./App.css";
 
 const App = () => {
+    
 
-
-    const [display,setDisplay]=useState(0);
-
-
+    const [display, setDisplay] = useState(0);
 
     return (
-
         <>
+            <Router>
+                <Routes>
+
+                    <Route path="/resume">
+                        <RedirectPdf pdfUrl={`${import.meta.env.BASE_URL}/assets/files/resume.pdf`} />
+                    </Route>
+
+                </Routes>
             <nav>
-                <div className="hLogo">{"\<"}havok {"\/\>"}</div>
+                <div className="hLogo">
+                    {"<"}havok {"/>"}
+                </div>
                 <div className="abouzLi">
-                    <div className="button-wrapper" onClick={()=>{display!=1&&setDisplay(1)||display===1&&setDisplay(0)}}>
+                    <div
+                        className="button-wrapper"
+                        onClick={() => {
+                            (display != 1 && setDisplay(1)) ||
+                                (display === 1 && setDisplay(0));
+                        }}
+                    >
                         <p className="ntext">About</p>
                     </div>
-
                 </div>
-                <div className="projzLi" onClick={()=>{display!=2&&setDisplay(2)||display===2&&setDisplay(0)}}>
+                <div
+                    className="projzLi"
+                    onClick={() => {
+                        (display != 2 && setDisplay(2)) ||
+                            (display === 2 && setDisplay(0));
+                    }}
+                >
                     <div className="button-wrapper">
                         <p className="ntext">Projects</p>
                     </div>
@@ -45,14 +64,15 @@ const App = () => {
                     </a>
                 </div>
             </nav>
-            <div className="bor1" /><div className="bor2" />
-            {display===0&&<Home />}
-            {display===1&&<About />}
-            {display===2&&<Project />}
-
-
+            <div className="bor1" />
+            <div className="bor2" />
+            {display === 0 && <Home />}
+            {display === 1 && <About />}
+            {display === 2 && <Project />}
+            </Router>
         </>
-    )
-}
+    );
+
+};
 
 export default App;

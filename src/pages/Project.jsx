@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { useEffect, useState } from "react";
 import pessatoGIF from "../assets/img/pessato-demo.gif"
 import gitviewGIF from "../assets/img/gitview-demo.gif"
