@@ -1,5 +1,3 @@
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -7,26 +5,26 @@ html {
 body {
     background-color: black;
     color: white;
-    margin:0;
+    margin: 0;
 }
 
 .hLogo {
     pointer-events: auto;
     display: flex;
-    font-family: 'navt';
-    top:7vh;
-    left:10vw;
+    font-family: "navt";
+    top: 7vh;
+    left: 10vw;
     position: fixed;
     font-size: 2vw;
     color: lightblue;
 }
 
 .bor1 {
-    margin:10vh 0 0 8vw;
-    width:30vw;
-    height:30vh;
-    border: 20px solid transparent; 
-    border-image: linear-gradient(to bottom right, white , transparent 50%);
+    margin: 10vh 0 0 8vw;
+    width: 30vw;
+    height: 30vh;
+    border: 20px solid transparent;
+    border-image: linear-gradient(to bottom right, white, transparent 50%);
     border-image-slice: 1;
     z-index: -1;
     animation: fadeIn 1s;
@@ -36,8 +34,8 @@ body {
     margin: 1vh 0 0 60vw;
     width: 30vw;
     height: 30vh;
-    border: 20px solid transparent; 
-    border-image: linear-gradient(to top left, white , transparent 50%);
+    border: 20px solid transparent;
+    border-image: linear-gradient(to top left, white, transparent 50%);
     border-image-slice: 1;
     z-index: -1;
     animation: fadeIn 1s;
@@ -48,47 +46,43 @@ body {
     text-align: center;
     font-size: 10vh;
     position: absolute;
-    margin:0;
-    padding:0;
-    top:40%;
-    left:30%;
+    margin: 0;
+    padding: 0;
+    top: 40%;
+    left: 30%;
 }
 
 .svgw {
     width: 33vw;
-    height:10vh;
-    stroke:lightblue;
-    fill:transparent;
-    animation: 
-        fancyText 4s,
-        fillIn 1s 4s forwards;
-    stroke-width: .5;
-    z-index:5;
+    height: 10vh;
+    stroke: lightblue;
+    fill: transparent;
+    animation: fancyText 4s, fillIn 1s 4s forwards;
+    stroke-width: 0.5;
+    z-index: 5;
 }
-
 
 nav {
     display: flex;
-    font-family: 'navt';
+    font-family: "navt";
     font-size: 1vw;
-    top:5vh;
-    left:39vw;
+    top: 5vh;
+    left: 39vw;
     position: relative;
     margin-right: 10vh;
-    width:max-content;
+    width: max-content;
 }
-
 
 .button-wrapper {
     cursor: pointer;
-    padding-right:2vw;
-    padding-left:2.3vw;
+    padding-right: 2vw;
+    padding-left: 2.3vw;
     margin-right: 6vw;
-    margin-bottom:3vh;
-    width:max-content;
-    border-bottom:2px solid lightblue;
+    margin-bottom: 3vh;
+    width: max-content;
+    border-bottom: 2px solid lightblue;
     border-radius: 16px;
-    transition: .3s;
+    transition: 0.3s;
     z-index: 3;
 }
 
@@ -102,10 +96,10 @@ nav {
 
 a {
     text-decoration: none;
-    color:lightblue;
+    color: lightblue;
 }
 
-a:visited { 
+a:visited {
     color: lightblue;
 }
 
@@ -125,22 +119,20 @@ a:visited {
 
 .typ {
     margin-top: 24vh;
-    font-size:8vw;
+    font-size: 8vw;
     opacity: 0;
-    width:0;
+    width: 0;
     border-right: 2px solid;
     white-space: nowrap;
     overflow: hidden;
-    animation:
-        fadeIn .5s 3s forwards,
-        typing 2s 5s infinite,
-        cursor .4s step-end infinite alternate;
+    animation: fadeIn 0.5s 3s forwards, typing 2s 5s infinite,
+        cursor 0.4s step-end infinite alternate;
 }
 
 #About {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
     position: fixed;
-    color:lightblue;
+    color: lightblue;
     top: 53%;
     left: 52%;
     transform: translate(-50%, -50%);
@@ -149,11 +141,11 @@ a:visited {
     font-size: 3.4vh;
     width: 60vw;
     font-family: hybi11;
-    color:white;
+    color: white;
 }
 
 .cont {
-    margin:0 0 0 5vw ;
+    margin: 0 0 0 5vw;
 }
 
 .icon {
@@ -163,12 +155,12 @@ a:visited {
     max-width: 30px;
     max-height: 30px;
     transition: transform 0.2s;
-    opacity:0.7;
+    opacity: 0.7;
 }
 
 .icon:hover {
     transform: scale(1.2);
-    opacity:1;
+    opacity: 1;
 }
 
 .back {
@@ -182,17 +174,17 @@ a:visited {
 }
 
 .jusName {
-    display:inline;
-    bottom:32vh;
-    left:50vw;
+    display: inline;
+    bottom: 32vh;
+    left: 50vw;
     font-size: 14vh;
 }
 
 .summary {
     display: flex;
     flex-direction: column;
-    top:23vh;
-    left:10vw;
+    top: 23vh;
+    left: 10vw;
     font-size: 8vh;
     color: rgba(173, 216, 230, 0.3);
     font-family: navt;
@@ -221,14 +213,14 @@ a:visited {
 .proz {
     display: flex;
     flex-direction: column;
-    padding : 1em;
+    padding: 1em;
     border-radius: 16px;
-    height:fit-content;
+    height: fit-content;
     width: 20vw;
     cursor: pointer;
-    border:black 2px solid;
-    transition: .3s ease;
-    background-color: rgba(255, 255, 255, 0.13);
+    border: black 2px solid;
+    transition: 0.3s ease;
+    background-color: rgba(190, 231, 255, 0.13);
 }
 
 .proz:hover {
@@ -236,51 +228,57 @@ a:visited {
     border-color: lightblue;
 }
 
-.pTitle, .selectedpTitle{
+.pTitle,
+.selectedpTitle {
     font-size: 1.2rem;
     font-family: hybi11;
     text-align: center;
     border-bottom: 3px solid;
-    border-image:linear-gradient(to right, rgba(173, 216, 230, 0), rgb(0, 183, 255), rgba(173, 216, 230, 0));
+    border-image: linear-gradient(
+        to right,
+        rgba(173, 216, 230, 0),
+        rgb(0, 183, 255),
+        rgba(173, 216, 230, 0)
+    );
     border-image-slice: 1;
-    padding: 0 0 .5em 0;
-    margin: 0 0 .5em 0;
+    padding: 0 0 0.5em 0;
+    margin: 0 0 0.5em 0;
 }
 
-.pDesc, .selectedpDesc{
+.pDesc,
+.selectedpDesc {
     font-family: navt;
     font-size: 1rem;
-    margin: .4em 0 0 0;
-    color:rgb(207, 243, 255);
+    margin: 0.4em 0 0 0;
+    color: rgb(207, 243, 255);
 }
 
 .selectedProj {
     width: 23.5vw;
-    transition: .3s ease;
+    transition: 0.3s ease;
     border-color: white;
-
 }
 
 .selectedpTitle {
     font-size: 1.5rem;
     margin: 0;
-    padding: 0 0 .2em 0;
+    padding: 0 0 0.2em 0;
 }
 
 .selectedpDesc {
     font-size: 1.2rem;
-    margin: .5em 0 0 0;
+    margin: 0.5em 0 0 0;
 }
 
 .proz:active {
-    color:black;
+    color: black;
     background-color: white;
     border-color: black;
 }
 
 .projDesc {
     margin: 4vw;
-    background-color: rgba(255, 255, 255, 0.13);
+    background-color: lightblue;
     padding: 2em;
     border-radius: 16px;
     display: flex;
@@ -288,7 +286,6 @@ a:visited {
 }
 
 .langs {
-    margin-top: .5em;
     display: flex;
 }
 
@@ -297,9 +294,10 @@ a:visited {
     border-radius: 7px;
 }
 
-.languages {
-    margin: .5em .7em 0 0 ;
-    padding: .7em;
+.languages,
+.gitLink {
+    margin: 0.5em 0.5em 0 0;
+    padding: 0.7em;
     background-color: white;
     color: black;
     font-family: navt;
@@ -310,13 +308,13 @@ a:visited {
     cursor: pointer;
     font-family: hybi11;
     position: absolute;
-    display:flex;
-    bottom:21.5vh;
-    right:15vw;
+    display: flex;
+    bottom: 21.5vh;
+    right: 15vw;
     font-size: 3.5vh;
-    padding: .6vh 1vh 1.2vh 2vh;
+    padding: 0.6vh 1vh 1.2vh 2vh;
     border-radius: 50px;
-    transition: .3s;
+    transition: 0.3s;
     background-color: rgba(46, 46, 46, 0.61);
 }
 
@@ -326,46 +324,108 @@ a:visited {
 }
 
 .resumeIMG {
-    margin : .06em 0 0 0;
+    margin: 0.06em 0 0 0;
     width: 4.3vh;
     height: 4.3vh;
 }
 
+.gitLink {
+    background-color: rgba(0, 0, 0, 0.973);
+    color: white;
+    cursor: pointer;
+    font-family: navt;
+    border: black 2px solid;
+    transition: 0.2s ease;
+    display: flex;
+}
+
+.gitLink:hover {
+    background-color: lightblue;
+    color: black;
+    transition: 0.2s ease;
+    font-weight: bold;
+}
+
+.dets {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projIMG {
+    width: 3vh;
+    height: 1.6vh;
+    margin-left: 0.3em;
+    padding: 0;
+}
+
 @keyframes fadeIn {
-    from{opacity: 0;display:none}
-    to{opacity: 100;display:flex;}
+    from {
+        opacity: 0;
+        display: none;
+    }
+    to {
+        opacity: 100;
+        display: flex;
+    }
 }
 
 @keyframes slideIn {
-    from{opacity: 0;left:40%}
-    to{opacity: 100;left:53.2%}
+    from {
+        opacity: 0;
+        left: 40%;
+    }
+    to {
+        opacity: 100;
+        left: 53.2%;
+    }
 }
 
 @keyframes wipeIn {
-    from{width: 0;}
-    to{width:50%;}
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
 }
 
-@keyframes cursor{
-    50% { border-color : transparent }
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
 }
 
 @keyframes fillIn {
-    from{fill:transparent;}
-    to{fill:lightblue;}
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: lightblue;
+    }
 }
 
 @keyframes typing {
-    0%{width:3vw;}
-    50%{width:100%}
-    100%{width:3vw}
+    0% {
+        width: 3vw;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 3vw;
+    }
 }
 
 @keyframes fancyText {
-    from{stroke-dasharray: 0 50%;}
-    to{stroke-dasharray: 50% 0;}
+    from {
+        stroke-dasharray: 0 50%;
+    }
+    to {
+        stroke-dasharray: 50% 0;
+    }
 }
-
 
 @media screen and (max-width: 870px) {
     .welcome {
