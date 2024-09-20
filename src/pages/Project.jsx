@@ -12,8 +12,6 @@ const Project = () => {
     const [incrementing, setIncrementing] = useState(true);
     const updateTitle = () => {
         let newI = i;
-        console.log("newI before update:", newI);
-        console.log("incrementing:", incrementing);
         if (incrementing) {
             newI++;
             if (newI == 8) {
