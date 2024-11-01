@@ -31,6 +31,9 @@ jobs:
           name: production-files
           path: ./dist
 
+      - name: Copy resume to dist
+        run: cp ./src/assets/misc/resume.pdf ./dist/
+
   deploy:
     name: Deploy
     needs: build
@@ -43,9 +46,6 @@ jobs:
         with:
           name: production-files
           path: ./dist
-
-      - name: Copy resume to root directory
-        run: cp ./dist/src/assets/misc/resume.pdf ./dist/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
