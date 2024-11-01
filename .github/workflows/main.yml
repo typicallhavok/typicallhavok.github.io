@@ -45,7 +45,7 @@ jobs:
           path: ./dist
 
       - name: Copy resume to root directory
-        run: cp ./dist/assets/misc/resume.pdf ./dist/
+        run: cp ./dist/src/assets/misc/resume.pdf ./dist/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
