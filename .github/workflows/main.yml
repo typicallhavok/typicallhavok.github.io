@@ -31,9 +31,6 @@ jobs:
           name: production-files
           path: ./dist
 
-      - name: Cache
-        uses: actions/cache@v4.1.2
-
   deploy:
     name: Deploy
     needs: build
