@@ -334,7 +334,7 @@ a:visited {
     color: white;
     cursor: pointer;
     font-family: navt;
-    border: black 2px solid;
+    border: black 3px solid;
     transition: 0.2s ease;
     display: flex;
 }

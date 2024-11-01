@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import pessatoGIF from "../assets/img/pessato-demo.gif";
-import gitviewGIF from "../assets/img/gitview-demo.gif";
-import crypTracer from "../assets/img/crypTrace-demo.png";
+import proj1demo from "../assets/demos/project1.mp4";
+import proj2demo from "../assets/demos/project2.mp4";
+import proj3demo from "../assets/demos/project3.mp4";
 import backImg from "../assets/img/back.svg";
 
 const Project = () => {
@@ -34,9 +34,9 @@ const Project = () => {
         };
     }, [i]);
 
-    const pessatoData = (
+    const project1 = (
         <>
-            <img src={pessatoGIF} alt="" className="projectImg" />
+            <video src={proj1demo} alt="pessato" className="projectImg" autoPlay controls/>
             <div className="dets">
                 <div className="langs">
                     <span className="languages">Python</span>
@@ -49,31 +49,32 @@ const Project = () => {
         </>
     );
 
-    const gitviewData = (
+    const project2 = (
         <>
-            <img src={gitviewGIF} alt="" className="projectImg" />
+            <video src={proj2demo} alt="task manager" className="projectImg" autoPlay controls/>
             <div className="dets">
                 <div className="langs">
+                    <span className="languages">Nodejs</span>
+                    <span className="languages">MongoDB</span>
                     <span className="languages">React</span>
-                    <span className="languages">HTMl</span>
-                    <span className="languages">CSS</span>
                 </div>
-                <div className="gitLink" onClick={()=>window.open("https://github.com/typicallhavok/gitview")}>View in github <img src={backImg} alt="" className="projIMG" /></div>
+                <div className="gitLink" onClick={()=>window.open("https://github.com/typicallhavok/task-manager")}>View in github <img src={backImg} alt="" className="projIMG" /></div>
+                <div className="gitLink" onClick={()=>window.open("https://task-manager-lime-eta.vercel.app")}>Try it out <img src={backImg} alt="" className="projIMG" /></div>
             </div>
         </>
     );
 
-    const crypTraceData = (
+    const project3 = (
         <>
-            <img src={crypTracer} alt="" className="projectImg" />
+            <video src={proj3demo} alt="bumperio" className="projectImg" autoPlay controls/>
             <div className="dets">
                 <div className="langs">
+                    <span className="languages">Threejs</span>
                     <span className="languages">React</span>
-                    <span className="languages">HTMl</span>
-                    <span className="languages">CSS</span>
-                    <span className="languages">Blockchain</span>
+                    <span className="languages">Rapier</span>
                 </div>
-                <div className="gitLink" onClick={()=>window.open("https://github.com/typicallhavok/Crypto_DreadPirateRoberts.eth")}>View in github <img src={backImg} alt="" className="projIMG" /></div>
+                <div className="gitLink" onClick={()=>window.open("https://github.com/typicallhavok/race")}>View in github <img src={backImg} alt="" className="projIMG" /></div>
+                <div className="gitLink" onClick={()=>window.open("https://bumperio.vercel.app")}>Try it out <img src={backImg} alt="" className="projIMG" /></div>
             </div>
         </>
     );
@@ -127,7 +128,7 @@ const Project = () => {
                                     : "pTitle"
                             }
                         >
-                            Gitview
+                            Task Manager
                         </span>
                         <span
                             className={
@@ -136,8 +137,7 @@ const Project = () => {
                                     : "pDesc"
                             }
                         >
-                            A web app designed to display GitHub profiles and
-                            repositories
+                            An app to manage and organise tasks
                         </span>
                     </div>
                     <div
@@ -158,7 +158,7 @@ const Project = () => {
                                     : "pTitle"
                             }
                         >
-                            Crypto Transaction tracer
+                            BumberIO
                         </span>
                         <span
                             className={
@@ -167,18 +167,17 @@ const Project = () => {
                                     : "pDesc"
                             }
                         >
-                            A web app designed to trace crypto transactions in
-                            the bitcoin blockchain
+                            A simple car game
                         </span>
                     </div>
                 </div>
                 <div className="projDesc">
                     {selectedClass === "pessato"
-                        ? pessatoData
+                        ? project1
                         : selectedClass === "gitView"
-                        ? gitviewData
+                        ? project2
                         : selectedClass === "crypTrace"
-                        ? crypTraceData
+                        ? project3
                         : null}
                 </div>
             </div>
